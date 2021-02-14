@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import NetworkingModule
 
 class GalleryPresenter: GalleryPresenterProtocol {
     private let repository: GalleryRepositoryProtocol
@@ -28,6 +29,9 @@ class GalleryPresenter: GalleryPresenterProtocol {
     }
 
     func loadMore() {
+        if tag.isEmpty {
+            return
+        }
         makeRequeste()
     }
 
@@ -38,12 +42,13 @@ class GalleryPresenter: GalleryPresenterProtocol {
         
         currentPage += 1
         repository.resquestPhotos(tags: tag, page: currentPage) { [weak self] result in
+            guard let self = self else { return }
             switch result {
             case.success(let response):
-                self?.handlerResponse(response)
+                self.handlerResponse(response)
             case .failure(let error):
-                self?.currentPage -= 1
-                self?.viewController?.showError(message: error.localizedDescription)
+                self.currentPage -= 1
+                self.viewController?.showError(message: self.handlerError(error))
             }
         }
     }
@@ -55,5 +60,18 @@ class GalleryPresenter: GalleryPresenterProtocol {
     private func handlerResponse(_ data: Photos) {
         isLast = data.pages == currentPage
         print(data)
+    }
+
+    private func handlerError(_ error: APIError) -> String {
+        switch error {
+        case .timeout:
+            return GalleryStrings.timeoutError
+        case .unauthorized:
+            return GalleryStrings.unauthorized
+        case .service, .request:
+            return GalleryStrings.serviceError
+        case .decode, .jsonConversionFailure, .invalidData:
+            return GalleryStrings.decodeError
+        }
     }
 }
