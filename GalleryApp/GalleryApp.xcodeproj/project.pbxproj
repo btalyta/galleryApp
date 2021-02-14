@@ -15,6 +15,10 @@
 		9F23E32125D97C2D00F31550 /* GalleryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E32025D97C2D00F31550 /* GalleryAppTests.swift */; };
 		9F23E34625D97E1000F31550 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E34525D97E1000F31550 /* AppCoordinator.swift */; };
 		9F23E35325D97EFD00F31550 /* NetworkingModule in Frameworks */ = {isa = PBXBuildFile; productRef = 9F23E35225D97EFD00F31550 /* NetworkingModule */; };
+		9F23E35D25D9834C00F31550 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E35C25D9834C00F31550 /* ImageManager.swift */; };
+		9F23E36125D983C600F31550 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E36025D983C600F31550 /* ImageStore.swift */; };
+		9F23E36625D9841D00F31550 /* ImageEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E36525D9841D00F31550 /* ImageEndpoint.swift */; };
+		9F23E36D25D9890000F31550 /* ImageEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E36C25D9890000F31550 /* ImageEndpointTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,10 @@
 		9F23E32025D97C2D00F31550 /* GalleryAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryAppTests.swift; sourceTree = "<group>"; };
 		9F23E32225D97C2D00F31550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F23E34525D97E1000F31550 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		9F23E35C25D9834C00F31550 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		9F23E36025D983C600F31550 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		9F23E36525D9841D00F31550 /* ImageEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEndpoint.swift; sourceTree = "<group>"; };
+		9F23E36C25D9890000F31550 /* ImageEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEndpointTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		9F23E30825D97C2C00F31550 /* GalleryApp */ = {
 			isa = PBXGroup;
 			children = (
+				9F23E35A25D9831C00F31550 /* CoreService */,
 				9F23E34325D97DF400F31550 /* Resource */,
 				9F23E33F25D97D0C00F31550 /* Scene */,
 			);
@@ -90,6 +99,7 @@
 		9F23E31F25D97C2D00F31550 /* GalleryAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				9F23E36925D988C300F31550 /* CoreService */,
 				9F23E32025D97C2D00F31550 /* GalleryAppTests.swift */,
 				9F23E32225D97C2D00F31550 /* Info.plist */,
 			);
@@ -131,6 +141,56 @@
 				9F23E31725D97C2D00F31550 /* Info.plist */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		9F23E35A25D9831C00F31550 /* CoreService */ = {
+			isa = PBXGroup;
+			children = (
+				9F23E35B25D9833600F31550 /* ImageManager */,
+			);
+			path = CoreService;
+			sourceTree = "<group>";
+		};
+		9F23E35B25D9833600F31550 /* ImageManager */ = {
+			isa = PBXGroup;
+			children = (
+				9F23E36425D9841100F31550 /* Endpoitnt */,
+				9F23E35C25D9834C00F31550 /* ImageManager.swift */,
+				9F23E36025D983C600F31550 /* ImageStore.swift */,
+			);
+			path = ImageManager;
+			sourceTree = "<group>";
+		};
+		9F23E36425D9841100F31550 /* Endpoitnt */ = {
+			isa = PBXGroup;
+			children = (
+				9F23E36525D9841D00F31550 /* ImageEndpoint.swift */,
+			);
+			path = Endpoitnt;
+			sourceTree = "<group>";
+		};
+		9F23E36925D988C300F31550 /* CoreService */ = {
+			isa = PBXGroup;
+			children = (
+				9F23E36A25D988CE00F31550 /* ImageManager */,
+			);
+			path = CoreService;
+			sourceTree = "<group>";
+		};
+		9F23E36A25D988CE00F31550 /* ImageManager */ = {
+			isa = PBXGroup;
+			children = (
+				9F23E36B25D988D600F31550 /* Endpoitnt */,
+			);
+			path = ImageManager;
+			sourceTree = "<group>";
+		};
+		9F23E36B25D988D600F31550 /* Endpoitnt */ = {
+			isa = PBXGroup;
+			children = (
+				9F23E36C25D9890000F31550 /* ImageEndpointTests.swift */,
+			);
+			path = Endpoitnt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,9 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F23E34625D97E1000F31550 /* AppCoordinator.swift in Sources */,
+				9F23E35D25D9834C00F31550 /* ImageManager.swift in Sources */,
 				9F23E30E25D97C2C00F31550 /* GalleryViewController.swift in Sources */,
+				9F23E36625D9841D00F31550 /* ImageEndpoint.swift in Sources */,
 				9F23E30A25D97C2C00F31550 /* AppDelegate.swift in Sources */,
 				9F23E30C25D97C2C00F31550 /* SceneDelegate.swift in Sources */,
+				9F23E36125D983C600F31550 /* ImageStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F23E36D25D9890000F31550 /* ImageEndpointTests.swift in Sources */,
 				9F23E32125D97C2D00F31550 /* GalleryAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
