@@ -26,6 +26,7 @@
 		9F23E3A425D996EE00F31550 /* SizeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3A325D996EE00F31550 /* SizeResponse.swift */; };
 		9F23E3A825D99B4000F31550 /* GetSizesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3A725D99B4000F31550 /* GetSizesEndpoint.swift */; };
 		9F23E3AF25D99CE900F31550 /* GetSizesEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3AE25D99CE900F31550 /* GetSizesEndpointTests.swift */; };
+		9F23E3B625D99E7400F31550 /* SearchEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3B525D99E7400F31550 /* SearchEndpointTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		9F23E3A325D996EE00F31550 /* SizeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeResponse.swift; sourceTree = "<group>"; };
 		9F23E3A725D99B4000F31550 /* GetSizesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSizesEndpoint.swift; sourceTree = "<group>"; };
 		9F23E3AE25D99CE900F31550 /* GetSizesEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSizesEndpointTests.swift; sourceTree = "<group>"; };
+		9F23E3B525D99E7400F31550 /* SearchEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEndpointTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		9F23E36925D988C300F31550 /* CoreService */ = {
 			isa = PBXGroup;
 			children = (
+				9F23E3B425D99E6700F31550 /* Search */,
 				9F23E3AD25D99CBB00F31550 /* GetSizes */,
 				9F23E36A25D988CE00F31550 /* ImageManager */,
 			);
@@ -276,6 +279,14 @@
 				9F23E3AE25D99CE900F31550 /* GetSizesEndpointTests.swift */,
 			);
 			path = GetSizes;
+			sourceTree = "<group>";
+		};
+		9F23E3B425D99E6700F31550 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				9F23E3B525D99E7400F31550 /* SearchEndpointTests.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F23E3B625D99E7400F31550 /* SearchEndpointTests.swift in Sources */,
 				9F23E37325D98A2900F31550 /* ImageManagerTests.swift in Sources */,
 				9F23E37825D98A6600F31550 /* MockNetworking.swift in Sources */,
 				9F23E3AF25D99CE900F31550 /* GetSizesEndpointTests.swift in Sources */,
