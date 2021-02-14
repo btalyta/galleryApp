@@ -61,7 +61,7 @@ extension GalleryViewController: GalleryViewControllerProtocol {
 
 extension GalleryViewController: UISearchBarDelegate, UISearchControllerDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        if let text = searchBar.text {
+        if let text = searchBar.text, !text.isEmpty {
             presenter.wantsToSearch(text: text)
         }
     }

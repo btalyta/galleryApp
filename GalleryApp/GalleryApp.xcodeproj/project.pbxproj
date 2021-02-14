@@ -39,6 +39,7 @@
 		9F23E3EB25D9E37300F31550 /* GalleryViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3EA25D9E37300F31550 /* GalleryViewControllerMock.swift */; };
 		9F23E3EF25D9E4CD00F31550 /* GalleryPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3EE25D9E4CD00F31550 /* GalleryPresenterTests.swift */; };
 		9F23E3F325D9ECD900F31550 /* GalleryPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3F225D9ECD900F31550 /* GalleryPresenterMock.swift */; };
+		9F23E3F725D9ED9400F31550 /* GalleryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3F625D9ED9400F31550 /* GalleryViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		9F23E3EA25D9E37300F31550 /* GalleryViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewControllerMock.swift; sourceTree = "<group>"; };
 		9F23E3EE25D9E4CD00F31550 /* GalleryPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPresenterTests.swift; sourceTree = "<group>"; };
 		9F23E3F225D9ECD900F31550 /* GalleryPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPresenterMock.swift; sourceTree = "<group>"; };
+		9F23E3F625D9ED9400F31550 /* GalleryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +355,7 @@
 			children = (
 				9F23E3DA25D9DE6000F31550 /* GalleryRepositoryTests.swift */,
 				9F23E3EE25D9E4CD00F31550 /* GalleryPresenterTests.swift */,
+				9F23E3F625D9ED9400F31550 /* GalleryViewControllerTests.swift */,
 			);
 			path = GalleryView;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 			files = (
 				9F23E3E725D9E26300F31550 /* GalleryRepositoryMock.swift in Sources */,
 				9F23E3EF25D9E4CD00F31550 /* GalleryPresenterTests.swift in Sources */,
+				9F23E3F725D9ED9400F31550 /* GalleryViewControllerTests.swift in Sources */,
 				9F23E3F325D9ECD900F31550 /* GalleryPresenterMock.swift in Sources */,
 				9F23E3EB25D9E37300F31550 /* GalleryViewControllerMock.swift in Sources */,
 				9F23E3DB25D9DE6000F31550 /* GalleryRepositoryTests.swift in Sources */,
