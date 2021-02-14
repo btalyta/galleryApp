@@ -12,3 +12,7 @@
 "tryAgain" = "Try Again";
 "errorTitle" = "Something is wrong";
 "confirm" = "Ok";
+"timeoutError"  = "Connection error.";
+"unauthorized" = "Unauthorized";
+"serviceError" = "Could not connect to the server.";
+"decodeError" = "Could not display results.";

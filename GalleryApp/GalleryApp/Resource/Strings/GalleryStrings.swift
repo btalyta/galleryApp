@@ -23,4 +23,8 @@ class GalleryStrings {
     static let tryAgain = localized(for: "tryAgain")
     static let errorTitle = localized(for: "errorTitle")
     static let confirm = localized(for: "confirm")
+    static let timeoutError = localized(for: "timeoutError")
+    static let unauthorized = localized(for: "unauthorized")
+    static let serviceError = localized(for: "serviceError")
+    static let decodeError = localized(for: "decodeError")
 }

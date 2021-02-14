@@ -35,6 +35,9 @@
 		9F23E3D225D9D33D00F31550 /* GalleryStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F23E3D125D9D33D00F31550 /* GalleryStrings.strings */; };
 		9F23E3DB25D9DE6000F31550 /* GalleryRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3DA25D9DE6000F31550 /* GalleryRepositoryTests.swift */; };
 		9F23E3E125D9DF1600F31550 /* SearchResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3E025D9DF1600F31550 /* SearchResponseMock.swift */; };
+		9F23E3E725D9E26300F31550 /* GalleryRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3E625D9E26300F31550 /* GalleryRepositoryMock.swift */; };
+		9F23E3EB25D9E37300F31550 /* GalleryViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3EA25D9E37300F31550 /* GalleryViewControllerMock.swift */; };
+		9F23E3EF25D9E4CD00F31550 /* GalleryPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3EE25D9E4CD00F31550 /* GalleryPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,9 @@
 		9F23E3D125D9D33D00F31550 /* GalleryStrings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = GalleryStrings.strings; sourceTree = "<group>"; };
 		9F23E3DA25D9DE6000F31550 /* GalleryRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryRepositoryTests.swift; sourceTree = "<group>"; };
 		9F23E3E025D9DF1600F31550 /* SearchResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponseMock.swift; sourceTree = "<group>"; };
+		9F23E3E625D9E26300F31550 /* GalleryRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryRepositoryMock.swift; sourceTree = "<group>"; };
+		9F23E3EA25D9E37300F31550 /* GalleryViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewControllerMock.swift; sourceTree = "<group>"; };
+		9F23E3EE25D9E4CD00F31550 /* GalleryPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +248,8 @@
 			children = (
 				9F23E37725D98A6600F31550 /* MockNetworking.swift */,
 				9F23E3E025D9DF1600F31550 /* SearchResponseMock.swift */,
+				9F23E3E625D9E26300F31550 /* GalleryRepositoryMock.swift */,
+				9F23E3EA25D9E37300F31550 /* GalleryViewControllerMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -341,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				9F23E3DA25D9DE6000F31550 /* GalleryRepositoryTests.swift */,
+				9F23E3EE25D9E4CD00F31550 /* GalleryPresenterTests.swift */,
 			);
 			path = GalleryView;
 			sourceTree = "<group>";
@@ -475,6 +484,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F23E3E725D9E26300F31550 /* GalleryRepositoryMock.swift in Sources */,
+				9F23E3EF25D9E4CD00F31550 /* GalleryPresenterTests.swift in Sources */,
+				9F23E3EB25D9E37300F31550 /* GalleryViewControllerMock.swift in Sources */,
 				9F23E3DB25D9DE6000F31550 /* GalleryRepositoryTests.swift in Sources */,
 				9F23E3B625D99E7400F31550 /* SearchEndpointTests.swift in Sources */,
 				9F23E37325D98A2900F31550 /* ImageManagerTests.swift in Sources */,
