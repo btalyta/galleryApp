@@ -1,0 +1,14 @@
+/* 
+  GalleryStrings.strings
+  GalleryApp
+
+  Created by Barbara Souza on 14/02/21.
+  
+*/
+
+"loadingMessage" = "Looking for photos";
+"appName" = "GalleryApp";
+"search" =  "Search";
+"tryAgain" = "Try Again";
+"errorTitle" = "Something is wrong";
+"confirm" = "Ok";
