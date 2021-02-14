@@ -38,6 +38,7 @@
 		9F23E3E725D9E26300F31550 /* GalleryRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3E625D9E26300F31550 /* GalleryRepositoryMock.swift */; };
 		9F23E3EB25D9E37300F31550 /* GalleryViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3EA25D9E37300F31550 /* GalleryViewControllerMock.swift */; };
 		9F23E3EF25D9E4CD00F31550 /* GalleryPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3EE25D9E4CD00F31550 /* GalleryPresenterTests.swift */; };
+		9F23E3F325D9ECD900F31550 /* GalleryPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3F225D9ECD900F31550 /* GalleryPresenterMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		9F23E3E625D9E26300F31550 /* GalleryRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryRepositoryMock.swift; sourceTree = "<group>"; };
 		9F23E3EA25D9E37300F31550 /* GalleryViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewControllerMock.swift; sourceTree = "<group>"; };
 		9F23E3EE25D9E4CD00F31550 /* GalleryPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPresenterTests.swift; sourceTree = "<group>"; };
+		9F23E3F225D9ECD900F31550 /* GalleryPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPresenterMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +252,7 @@
 				9F23E3E025D9DF1600F31550 /* SearchResponseMock.swift */,
 				9F23E3E625D9E26300F31550 /* GalleryRepositoryMock.swift */,
 				9F23E3EA25D9E37300F31550 /* GalleryViewControllerMock.swift */,
+				9F23E3F225D9ECD900F31550 /* GalleryPresenterMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 			files = (
 				9F23E3E725D9E26300F31550 /* GalleryRepositoryMock.swift in Sources */,
 				9F23E3EF25D9E4CD00F31550 /* GalleryPresenterTests.swift in Sources */,
+				9F23E3F325D9ECD900F31550 /* GalleryPresenterMock.swift in Sources */,
 				9F23E3EB25D9E37300F31550 /* GalleryViewControllerMock.swift in Sources */,
 				9F23E3DB25D9DE6000F31550 /* GalleryRepositoryTests.swift in Sources */,
 				9F23E3B625D99E7400F31550 /* SearchEndpointTests.swift in Sources */,
