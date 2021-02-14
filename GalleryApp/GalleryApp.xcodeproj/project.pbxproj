@@ -19,6 +19,8 @@
 		9F23E36125D983C600F31550 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E36025D983C600F31550 /* ImageStore.swift */; };
 		9F23E36625D9841D00F31550 /* ImageEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E36525D9841D00F31550 /* ImageEndpoint.swift */; };
 		9F23E36D25D9890000F31550 /* ImageEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E36C25D9890000F31550 /* ImageEndpointTests.swift */; };
+		9F23E37325D98A2900F31550 /* ImageManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E37225D98A2900F31550 /* ImageManagerTests.swift */; };
+		9F23E37825D98A6600F31550 /* MockNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E37725D98A6600F31550 /* MockNetworking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		9F23E36025D983C600F31550 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		9F23E36525D9841D00F31550 /* ImageEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEndpoint.swift; sourceTree = "<group>"; };
 		9F23E36C25D9890000F31550 /* ImageEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEndpointTests.swift; sourceTree = "<group>"; };
+		9F23E37225D98A2900F31550 /* ImageManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManagerTests.swift; sourceTree = "<group>"; };
+		9F23E37725D98A6600F31550 /* MockNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		9F23E31F25D97C2D00F31550 /* GalleryAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				9F23E37625D98A5900F31550 /* Mocks */,
 				9F23E36925D988C300F31550 /* CoreService */,
 				9F23E32025D97C2D00F31550 /* GalleryAppTests.swift */,
 				9F23E32225D97C2D00F31550 /* Info.plist */,
@@ -181,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				9F23E36B25D988D600F31550 /* Endpoitnt */,
+				9F23E37225D98A2900F31550 /* ImageManagerTests.swift */,
 			);
 			path = ImageManager;
 			sourceTree = "<group>";
@@ -191,6 +197,14 @@
 				9F23E36C25D9890000F31550 /* ImageEndpointTests.swift */,
 			);
 			path = Endpoitnt;
+			sourceTree = "<group>";
+		};
+		9F23E37625D98A5900F31550 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				9F23E37725D98A6600F31550 /* MockNetworking.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F23E37325D98A2900F31550 /* ImageManagerTests.swift in Sources */,
+				9F23E37825D98A6600F31550 /* MockNetworking.swift in Sources */,
 				9F23E36D25D9890000F31550 /* ImageEndpointTests.swift in Sources */,
 				9F23E32125D97C2D00F31550 /* GalleryAppTests.swift in Sources */,
 			);
