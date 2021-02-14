@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct SearchResponse: Decodable, Equatable {
+    let photos: Photos
+}
+
 struct Photos: Decodable, Equatable {
     let page, pages, perpage: Int
     let photo: [Photo]

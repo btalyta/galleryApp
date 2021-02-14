@@ -27,6 +27,13 @@
 		9F23E3A825D99B4000F31550 /* GetSizesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3A725D99B4000F31550 /* GetSizesEndpoint.swift */; };
 		9F23E3AF25D99CE900F31550 /* GetSizesEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3AE25D99CE900F31550 /* GetSizesEndpointTests.swift */; };
 		9F23E3B625D99E7400F31550 /* SearchEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3B525D99E7400F31550 /* SearchEndpointTests.swift */; };
+		9F23E3BE25D9A03E00F31550 /* GalleryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3BB25D9A03E00F31550 /* GalleryRepository.swift */; };
+		9F23E3BF25D9A03E00F31550 /* GalleryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3BC25D9A03E00F31550 /* GalleryPresenter.swift */; };
+		9F23E3C025D9A03E00F31550 /* GalleryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3BD25D9A03E00F31550 /* GalleryProtocols.swift */; };
+		9F23E3C425D9A4D100F31550 /* Flickr-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F23E3C325D9A4D100F31550 /* Flickr-Info.plist */; };
+		9F23E3C925D9A60700F31550 /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3C825D9A60700F31550 /* KeyManager.swift */; };
+		9F23E3CE25D9D2FB00F31550 /* GalleryStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E3CD25D9D2FB00F31550 /* GalleryStrings.swift */; };
+		9F23E3D225D9D33D00F31550 /* GalleryStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F23E3D125D9D33D00F31550 /* GalleryStrings.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +70,13 @@
 		9F23E3A725D99B4000F31550 /* GetSizesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSizesEndpoint.swift; sourceTree = "<group>"; };
 		9F23E3AE25D99CE900F31550 /* GetSizesEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSizesEndpointTests.swift; sourceTree = "<group>"; };
 		9F23E3B525D99E7400F31550 /* SearchEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEndpointTests.swift; sourceTree = "<group>"; };
+		9F23E3BB25D9A03E00F31550 /* GalleryRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryRepository.swift; sourceTree = "<group>"; };
+		9F23E3BC25D9A03E00F31550 /* GalleryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryPresenter.swift; sourceTree = "<group>"; };
+		9F23E3BD25D9A03E00F31550 /* GalleryProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryProtocols.swift; sourceTree = "<group>"; };
+		9F23E3C325D9A4D100F31550 /* Flickr-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flickr-Info.plist"; sourceTree = "<group>"; };
+		9F23E3C825D9A60700F31550 /* KeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyManager.swift; sourceTree = "<group>"; };
+		9F23E3CD25D9D2FB00F31550 /* GalleryStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryStrings.swift; sourceTree = "<group>"; };
+		9F23E3D125D9D33D00F31550 /* GalleryStrings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = GalleryStrings.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +148,9 @@
 		9F23E34025D97D1500F31550 /* GalleryView */ = {
 			isa = PBXGroup;
 			children = (
+				9F23E3BC25D9A03E00F31550 /* GalleryPresenter.swift */,
+				9F23E3BD25D9A03E00F31550 /* GalleryProtocols.swift */,
+				9F23E3BB25D9A03E00F31550 /* GalleryRepository.swift */,
 				9F23E30D25D97C2C00F31550 /* GalleryViewController.swift */,
 			);
 			path = GalleryView;
@@ -144,6 +161,8 @@
 			children = (
 				9F23E31225D97C2D00F31550 /* Assets.xcassets */,
 				9F23E31425D97C2D00F31550 /* LaunchScreen.storyboard */,
+				9F23E3C725D9A5E100F31550 /* KeyManager */,
+				9F23E3CC25D9D2CB00F31550 /* Strings */,
 				9F23E34425D97DFD00F31550 /* App */,
 			);
 			path = Resource;
@@ -156,6 +175,7 @@
 				9F23E30925D97C2C00F31550 /* AppDelegate.swift */,
 				9F23E30B25D97C2C00F31550 /* SceneDelegate.swift */,
 				9F23E31725D97C2D00F31550 /* Info.plist */,
+				9F23E3C325D9A4D100F31550 /* Flickr-Info.plist */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -289,6 +309,23 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		9F23E3C725D9A5E100F31550 /* KeyManager */ = {
+			isa = PBXGroup;
+			children = (
+				9F23E3C825D9A60700F31550 /* KeyManager.swift */,
+			);
+			path = KeyManager;
+			sourceTree = "<group>";
+		};
+		9F23E3CC25D9D2CB00F31550 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				9F23E3CD25D9D2FB00F31550 /* GalleryStrings.swift */,
+				9F23E3D125D9D33D00F31550 /* GalleryStrings.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -375,6 +412,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F23E3D225D9D33D00F31550 /* GalleryStrings.strings in Resources */,
+				9F23E3C425D9A4D100F31550 /* Flickr-Info.plist in Resources */,
 				9F23E31625D97C2D00F31550 /* LaunchScreen.storyboard in Resources */,
 				9F23E31325D97C2D00F31550 /* Assets.xcassets in Resources */,
 			);
@@ -394,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F23E3BF25D9A03E00F31550 /* GalleryPresenter.swift in Sources */,
 				9F23E3A425D996EE00F31550 /* SizeResponse.swift in Sources */,
 				9F23E34625D97E1000F31550 /* AppCoordinator.swift in Sources */,
 				9F23E39325D992E700F31550 /* SearchEndpoint.swift in Sources */,
@@ -402,8 +442,12 @@
 				9F23E30E25D97C2C00F31550 /* GalleryViewController.swift in Sources */,
 				9F23E36625D9841D00F31550 /* ImageEndpoint.swift in Sources */,
 				9F23E39C25D995E700F31550 /* PhotosResponse.swift in Sources */,
+				9F23E3CE25D9D2FB00F31550 /* GalleryStrings.swift in Sources */,
 				9F23E30A25D97C2C00F31550 /* AppDelegate.swift in Sources */,
+				9F23E3C025D9A03E00F31550 /* GalleryProtocols.swift in Sources */,
+				9F23E3C925D9A60700F31550 /* KeyManager.swift in Sources */,
 				9F23E30C25D97C2C00F31550 /* SceneDelegate.swift in Sources */,
+				9F23E3BE25D9A03E00F31550 /* GalleryRepository.swift in Sources */,
 				9F23E36125D983C600F31550 /* ImageStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
