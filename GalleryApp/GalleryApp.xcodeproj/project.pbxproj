@@ -49,6 +49,9 @@
 		9F23E42025DAA16700F31550 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E41F25DAA16700F31550 /* LoadingView.swift */; };
 		9F23E42525DAA7DF00F31550 /* GalleryColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E42425DAA7DF00F31550 /* GalleryColors.swift */; };
 		9F23E42D25DAC82C00F31550 /* GalleryColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E42C25DAC82C00F31550 /* GalleryColorsTests.swift */; };
+		9F23E43525DACBC900F31550 /* ImageDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E43425DACBC900F31550 /* ImageDownloaderTests.swift */; };
+		9F23E43B25DACC1000F31550 /* ImageManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E43A25DACC1000F31550 /* ImageManagerMock.swift */; };
+		9F23E43F25DAD77400F31550 /* GetSizesResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E43E25DAD77400F31550 /* GetSizesResponseMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,9 @@
 		9F23E41F25DAA16700F31550 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		9F23E42425DAA7DF00F31550 /* GalleryColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryColors.swift; sourceTree = "<group>"; };
 		9F23E42C25DAC82C00F31550 /* GalleryColorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryColorsTests.swift; sourceTree = "<group>"; };
+		9F23E43425DACBC900F31550 /* ImageDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderTests.swift; sourceTree = "<group>"; };
+		9F23E43A25DACC1000F31550 /* ImageManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManagerMock.swift; sourceTree = "<group>"; };
+		9F23E43E25DAD77400F31550 /* GetSizesResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSizesResponseMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,7 @@
 		9F23E31F25D97C2D00F31550 /* GalleryAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				9F23E43225DACBA000F31550 /* Common */,
 				9F23E3FA25D9F10A00F31550 /* Resource */,
 				9F23E37625D98A5900F31550 /* Mocks */,
 				9F23E3D825D9DE4100F31550 /* Scene */,
@@ -277,6 +284,8 @@
 				9F23E3E625D9E26300F31550 /* GalleryRepositoryMock.swift */,
 				9F23E3EA25D9E37300F31550 /* GalleryViewControllerMock.swift */,
 				9F23E3F225D9ECD900F31550 /* GalleryPresenterMock.swift */,
+				9F23E43A25DACC1000F31550 /* ImageManagerMock.swift */,
+				9F23E43E25DAD77400F31550 /* GetSizesResponseMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -451,6 +460,22 @@
 			path = Colors;
 			sourceTree = "<group>";
 		};
+		9F23E43225DACBA000F31550 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9F23E43325DACBA600F31550 /* ImageDownloader */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9F23E43325DACBA600F31550 /* ImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				9F23E43425DACBC900F31550 /* ImageDownloaderTests.swift */,
+			);
+			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -596,7 +621,10 @@
 				9F23E3FD25D9F12F00F31550 /* AppCoordinatorTests.swift in Sources */,
 				9F23E3EB25D9E37300F31550 /* GalleryViewControllerMock.swift in Sources */,
 				9F23E3DB25D9DE6000F31550 /* GalleryRepositoryTests.swift in Sources */,
+				9F23E43525DACBC900F31550 /* ImageDownloaderTests.swift in Sources */,
+				9F23E43B25DACC1000F31550 /* ImageManagerMock.swift in Sources */,
 				9F23E3B625D99E7400F31550 /* SearchEndpointTests.swift in Sources */,
+				9F23E43F25DAD77400F31550 /* GetSizesResponseMock.swift in Sources */,
 				9F23E37325D98A2900F31550 /* ImageManagerTests.swift in Sources */,
 				9F23E3E125D9DF1600F31550 /* SearchResponseMock.swift in Sources */,
 				9F23E37825D98A6600F31550 /* MockNetworking.swift in Sources */,

@@ -38,7 +38,7 @@ class ImageDownloader: ImageDownloaderProtocol {
             case .success(let data):
                 self?.loadImage(from: id, sizes: data.sizes.size, completion: completion)
             case .failure:
-                completion(UIImage())
+                completion(nil)
             }
         }
     }
