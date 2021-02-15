@@ -54,6 +54,8 @@
 		9F23E43F25DAD77400F31550 /* GetSizesResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E43E25DAD77400F31550 /* GetSizesResponseMock.swift */; };
 		9F23E44425DADDC000F31550 /* LoadingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E44325DADDC000F31550 /* LoadingViewTests.swift */; };
 		9F23E44B25DADE4100F31550 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 9F23E44A25DADE4100F31550 /* SnapshotTesting */; };
+		9F23E45025DADFD300F31550 /* PhotoCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E44F25DADFD300F31550 /* PhotoCellTests.swift */; };
+		9F23E45625DAE05800F31550 /* ImageMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E45525DAE05800F31550 /* ImageMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,8 @@
 		9F23E43A25DACC1000F31550 /* ImageManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManagerMock.swift; sourceTree = "<group>"; };
 		9F23E43E25DAD77400F31550 /* GetSizesResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSizesResponseMock.swift; sourceTree = "<group>"; };
 		9F23E44325DADDC000F31550 /* LoadingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewTests.swift; sourceTree = "<group>"; };
+		9F23E44F25DADFD300F31550 /* PhotoCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCellTests.swift; sourceTree = "<group>"; };
+		9F23E45525DAE05800F31550 /* ImageMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +294,7 @@
 				9F23E3F225D9ECD900F31550 /* GalleryPresenterMock.swift */,
 				9F23E43A25DACC1000F31550 /* ImageManagerMock.swift */,
 				9F23E43E25DAD77400F31550 /* GetSizesResponseMock.swift */,
+				9F23E45525DAE05800F31550 /* ImageMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -388,6 +393,7 @@
 		9F23E3D925D9DE5000F31550 /* GalleryView */ = {
 			isa = PBXGroup;
 			children = (
+				9F23E44E25DADFC800F31550 /* View */,
 				9F23E3DA25D9DE6000F31550 /* GalleryRepositoryTests.swift */,
 				9F23E3EE25D9E4CD00F31550 /* GalleryPresenterTests.swift */,
 				9F23E3F625D9ED9400F31550 /* GalleryViewControllerTests.swift */,
@@ -487,6 +493,14 @@
 				9F23E44325DADDC000F31550 /* LoadingViewTests.swift */,
 			);
 			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		9F23E44E25DADFC800F31550 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F23E44F25DADFD300F31550 /* PhotoCellTests.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -637,6 +651,7 @@
 				9F23E3F325D9ECD900F31550 /* GalleryPresenterMock.swift in Sources */,
 				9F23E3FD25D9F12F00F31550 /* AppCoordinatorTests.swift in Sources */,
 				9F23E3EB25D9E37300F31550 /* GalleryViewControllerMock.swift in Sources */,
+				9F23E45625DAE05800F31550 /* ImageMock.swift in Sources */,
 				9F23E44425DADDC000F31550 /* LoadingViewTests.swift in Sources */,
 				9F23E3DB25D9DE6000F31550 /* GalleryRepositoryTests.swift in Sources */,
 				9F23E43525DACBC900F31550 /* ImageDownloaderTests.swift in Sources */,
@@ -645,6 +660,7 @@
 				9F23E43F25DAD77400F31550 /* GetSizesResponseMock.swift in Sources */,
 				9F23E37325D98A2900F31550 /* ImageManagerTests.swift in Sources */,
 				9F23E3E125D9DF1600F31550 /* SearchResponseMock.swift in Sources */,
+				9F23E45025DADFD300F31550 /* PhotoCellTests.swift in Sources */,
 				9F23E37825D98A6600F31550 /* MockNetworking.swift in Sources */,
 				9F23E3AF25D99CE900F31550 /* GetSizesEndpointTests.swift in Sources */,
 				9F23E36D25D9890000F31550 /* ImageEndpointTests.swift in Sources */,

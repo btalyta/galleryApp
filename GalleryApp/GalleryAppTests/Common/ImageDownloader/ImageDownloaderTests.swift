@@ -19,7 +19,7 @@ class ImageDownloaderTests: XCTestCase {
                                   imageStore: imageStore,
                                   imageManager: imageManagerMock)
         networkMock.result = GetSizesResponseMock.value
-        imageManagerMock.image = createImage(with: .cyan)
+        imageManagerMock.image = ImageMock.createImage(with: .cyan)
 
         sut.getPhoto(from: "1234567AA") { result in
             XCTAssertNotNil(result)
@@ -41,14 +41,6 @@ class ImageDownloaderTests: XCTestCase {
         sut.getPhoto(from: "1234567AA") { result in
             XCTAssertNil(result)
             XCTAssertEqual(imageManagerMock.downloadCalledCount, 0)
-        }
-    }
-
-    func createImage(with color: UIColor, width: Int = 10, height: Int = 10) -> UIImage {
-        let size = CGSize(width: width, height: height)
-        return UIGraphicsImageRenderer(size: size).image { rendererContext in
-            color.setFill()
-            rendererContext.fill(CGRect(origin: .zero, size: size))
         }
     }
 }
