@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PhotosViewModel {
+struct PhotosViewModel: Equatable {
     var photos: [Photo] = []
     var hasMore: Bool = true
     var isLoading: Bool = false

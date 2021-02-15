@@ -29,15 +29,20 @@ class GalleryPresenterTests: XCTestCase {
         XCTAssertEqual(repositoryMock.tags, "kitten")
     }
 
-    func test_wantsToSearch_whenRequestIsSuccessful() {
+    func test_wantsToSearch_whenRequestIsSuccessful_callsViewControllerShowViewModel() {
         setupSUT()
         repositoryMock.result = SearchResponseMock.value.photos
+        let expectedViewModel = PhotosViewModel(photos: SearchResponseMock.value.photos.photo,
+                                                hasMore: true,
+                                                isLoading: false)
 
         sut.wantsToSearch(text: "kitten")
 
         XCTAssertEqual(repositoryMock.resquestPhotosCount, 1)
         XCTAssertEqual(repositoryMock.page, 1)
         XCTAssertEqual(repositoryMock.tags, "kitten")
+        XCTAssertEqual(viewControllerMock.viewModel, expectedViewModel)
+        XCTAssertTrue(viewControllerMock.showWasCalled)
     }
 
     func test_loadMore_whenTagIsEmpty() {
@@ -51,9 +56,12 @@ class GalleryPresenterTests: XCTestCase {
         XCTAssertNil(repositoryMock.tags)
     }
 
-    func test_loadMore_whenTagIsNotEmpty_andRequestIsSuccessful() {
+    func test_loadMore_whenTagIsNotEmpty_andRequestIsSuccessful_callsViewControllerShowViewModel() {
         setupSUT()
         repositoryMock.result = SearchResponseMock.value.photos
+        let expectedViewModel = PhotosViewModel(photos: SearchResponseMock.value.photos.photo,
+                                                hasMore: true,
+                                                isLoading: false)
 
         sut.wantsToSearch(text: "kitten")
         sut.loadMore()
@@ -61,9 +69,11 @@ class GalleryPresenterTests: XCTestCase {
         XCTAssertEqual(repositoryMock.resquestPhotosCount, 2)
         XCTAssertEqual(repositoryMock.page, 2)
         XCTAssertEqual(repositoryMock.tags, "kitten")
+        XCTAssertEqual(viewControllerMock.viewModel, expectedViewModel)
+        XCTAssertTrue(viewControllerMock.showWasCalled)
     }
 
-    func test_loadMore_whenTagIsNotEmpty_andRequestFails() {
+    func test_loadMore_whenTagIsNotEmpty_andRequestFails_itShouldCorrectPage() {
         setupSUT()
         repositoryMock.result = SearchResponseMock.value.photos
 
