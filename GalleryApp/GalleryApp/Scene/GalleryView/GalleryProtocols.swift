@@ -20,4 +20,5 @@ protocol GalleryPresenterProtocol: class {
 
 protocol GalleryViewControllerProtocol: class {
     func showError(message: String)
+    func show(viewModel: PhotosViewModel)
 }
