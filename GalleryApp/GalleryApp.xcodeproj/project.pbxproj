@@ -48,6 +48,7 @@
 		9F23E41625DA04FE00F31550 /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E41525DA04FE00F31550 /* PhotosView.swift */; };
 		9F23E42025DAA16700F31550 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E41F25DAA16700F31550 /* LoadingView.swift */; };
 		9F23E42525DAA7DF00F31550 /* GalleryColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E42425DAA7DF00F31550 /* GalleryColors.swift */; };
+		9F23E42D25DAC82C00F31550 /* GalleryColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E42C25DAC82C00F31550 /* GalleryColorsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		9F23E41525DA04FE00F31550 /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
 		9F23E41F25DAA16700F31550 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		9F23E42425DAA7DF00F31550 /* GalleryColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryColors.swift; sourceTree = "<group>"; };
+		9F23E42C25DAC82C00F31550 /* GalleryColorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryColorsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -383,6 +385,7 @@
 		9F23E3FA25D9F10A00F31550 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9F23E42B25DAC81100F31550 /* Colors */,
 				9F23E3FB25D9F11500F31550 /* App */,
 			);
 			path = Resource;
@@ -438,6 +441,14 @@
 				9F23E40925D9FBE200F31550 /* ImageDownloader.swift */,
 			);
 			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
+		9F23E42B25DAC81100F31550 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				9F23E42C25DAC82C00F31550 /* GalleryColorsTests.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -577,6 +588,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F23E42D25DAC82C00F31550 /* GalleryColorsTests.swift in Sources */,
 				9F23E3E725D9E26300F31550 /* GalleryRepositoryMock.swift in Sources */,
 				9F23E3EF25D9E4CD00F31550 /* GalleryPresenterTests.swift in Sources */,
 				9F23E3F725D9ED9400F31550 /* GalleryViewControllerTests.swift in Sources */,
