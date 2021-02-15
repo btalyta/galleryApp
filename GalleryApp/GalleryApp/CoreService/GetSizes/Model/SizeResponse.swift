@@ -8,7 +8,7 @@
 import Foundation
 
 struct SizeResponse: Decodable, Equatable {
-    let value: Sizes
+    let sizes: Sizes
 }
 
 struct Sizes: Decodable, Equatable {
@@ -24,7 +24,7 @@ struct Size: Decodable, Equatable {
 
 extension Size {
     enum Label: String, Equatable {
-        case largeSquare = "Large Square"
+        case largeSquare = "large square"
         case other
     }
 }

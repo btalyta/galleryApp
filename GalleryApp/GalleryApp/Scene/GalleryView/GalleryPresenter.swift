@@ -13,6 +13,7 @@ class GalleryPresenter: GalleryPresenterProtocol {
     private var currentPage: Int
     private var isLast: Bool
     private var tag: String
+    private var model: PhotosViewModel
     weak var viewController: GalleryViewControllerProtocol?
 
     init(repository: GalleryRepositoryProtocol) {
@@ -20,26 +21,31 @@ class GalleryPresenter: GalleryPresenterProtocol {
         self.currentPage = 0
         self.isLast = false
         self.tag = ""
+        self.model = PhotosViewModel()
     }
 
     func wantsToSearch(text: String) {
         handlerTag(text)
         currentPage = 0
-        makeRequeste()
+        makeRequest()
+        model.photos = []
+
     }
 
     func loadMore() {
         if tag.isEmpty {
             return
         }
-        makeRequeste()
+        makeRequest()
     }
 
-    private func makeRequeste() {
+    private func makeRequest() {
         if isLast {
             return
         }
-        
+
+        updateModel(isLoading: true)
+
         currentPage += 1
         repository.resquestPhotos(tags: tag, page: currentPage) { [weak self] result in
             guard let self = self else { return }
@@ -48,6 +54,7 @@ class GalleryPresenter: GalleryPresenterProtocol {
                 self.handlerResponse(response)
             case .failure(let error):
                 self.currentPage -= 1
+                self.updateModel(isLoading: false)
                 self.viewController?.showError(message: self.handlerError(error))
             }
         }
@@ -59,7 +66,8 @@ class GalleryPresenter: GalleryPresenterProtocol {
 
     private func handlerResponse(_ data: Photos) {
         isLast = data.pages == currentPage
-        print(data)
+        model.photos.append(contentsOf: data.photo)
+        updateModel(isLoading: false)
     }
 
     private func handlerError(_ error: APIError) -> String {
@@ -73,5 +81,12 @@ class GalleryPresenter: GalleryPresenterProtocol {
         case .decode, .jsonConversionFailure, .invalidData:
             return GalleryStrings.decodeError
         }
+    }
+
+    private func updateModel(isLoading: Bool) {
+        model.hasMore = !isLast
+        model.isLoading = isLoading
+
+        viewController?.show(viewModel: model)
     }
 }
