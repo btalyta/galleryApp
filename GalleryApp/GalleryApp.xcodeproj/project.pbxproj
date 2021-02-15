@@ -52,6 +52,8 @@
 		9F23E43525DACBC900F31550 /* ImageDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E43425DACBC900F31550 /* ImageDownloaderTests.swift */; };
 		9F23E43B25DACC1000F31550 /* ImageManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E43A25DACC1000F31550 /* ImageManagerMock.swift */; };
 		9F23E43F25DAD77400F31550 /* GetSizesResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E43E25DAD77400F31550 /* GetSizesResponseMock.swift */; };
+		9F23E44425DADDC000F31550 /* LoadingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23E44325DADDC000F31550 /* LoadingViewTests.swift */; };
+		9F23E44B25DADE4100F31550 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 9F23E44A25DADE4100F31550 /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,7 @@
 		9F23E43425DACBC900F31550 /* ImageDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderTests.swift; sourceTree = "<group>"; };
 		9F23E43A25DACC1000F31550 /* ImageManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManagerMock.swift; sourceTree = "<group>"; };
 		9F23E43E25DAD77400F31550 /* GetSizesResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSizesResponseMock.swift; sourceTree = "<group>"; };
+		9F23E44325DADDC000F31550 /* LoadingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F23E44B25DADE4100F31550 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +467,7 @@
 		9F23E43225DACBA000F31550 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9F23E44225DADDB700F31550 /* LoadingView */,
 				9F23E43325DACBA600F31550 /* ImageDownloader */,
 			);
 			path = Common;
@@ -474,6 +479,14 @@
 				9F23E43425DACBC900F31550 /* ImageDownloaderTests.swift */,
 			);
 			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
+		9F23E44225DADDB700F31550 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				9F23E44325DADDC000F31550 /* LoadingViewTests.swift */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,6 +526,9 @@
 				9F23E31E25D97C2D00F31550 /* PBXTargetDependency */,
 			);
 			name = GalleryAppTests;
+			packageProductDependencies = (
+				9F23E44A25DADE4100F31550 /* SnapshotTesting */,
+			);
 			productName = GalleryAppTests;
 			productReference = 9F23E31C25D97C2D00F31550 /* GalleryAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -546,6 +562,7 @@
 			mainGroup = 9F23E2FD25D97C2C00F31550;
 			packageReferences = (
 				9F23E35125D97EFD00F31550 /* XCRemoteSwiftPackageReference "networkingModule" */,
+				9F23E44925DADE4100F31550 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = 9F23E30725D97C2C00F31550 /* Products */;
 			projectDirPath = "";
@@ -620,6 +637,7 @@
 				9F23E3F325D9ECD900F31550 /* GalleryPresenterMock.swift in Sources */,
 				9F23E3FD25D9F12F00F31550 /* AppCoordinatorTests.swift in Sources */,
 				9F23E3EB25D9E37300F31550 /* GalleryViewControllerMock.swift in Sources */,
+				9F23E44425DADDC000F31550 /* LoadingViewTests.swift in Sources */,
 				9F23E3DB25D9DE6000F31550 /* GalleryRepositoryTests.swift in Sources */,
 				9F23E43525DACBC900F31550 /* ImageDownloaderTests.swift in Sources */,
 				9F23E43B25DACC1000F31550 /* ImageManagerMock.swift in Sources */,
@@ -894,6 +912,14 @@
 				minimumVersion = 1.0.1;
 			};
 		};
+		9F23E44925DADE4100F31550 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -901,6 +927,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9F23E35125D97EFD00F31550 /* XCRemoteSwiftPackageReference "networkingModule" */;
 			productName = NetworkingModule;
+		};
+		9F23E44A25DADE4100F31550 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F23E44925DADE4100F31550 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
