@@ -15,6 +15,7 @@ class GalleryViewControllerTests: XCTestCase {
     var presenterMock: GalleryPresenterMock!
     var searchController: UISearchController!
     var photosView: PhotosView!
+    var delegateMock: GalleryViewControllerDelegateMock!
 
     func test_searchBarSearchButtonClicked_whenThereIsText_callsWantsToSearchsPresenter() {
         setupSUT()
@@ -46,7 +47,28 @@ class GalleryViewControllerTests: XCTestCase {
         XCTAssertTrue(presenterMock.loadMoreWasCalled)
     }
 
+    func test_bindActions_didTapItem_callsPresentDidSelectItem() {
+        setupSUT()
+        sut.viewDidLoad()
+
+        photosView.didTapItem?(0)
+
+        XCTAssertTrue(presenterMock.didSelectItemWasCalled)
+        XCTAssertEqual(presenterMock.row, 0)
+    }
+
+    func test_wantsToShow_callsDelegateWantsToShowItem() {
+        setupSUT()
+        let expectedItem = SearchResponseMock.makePhoto()
+
+        sut.wantsToShow(expectedItem)
+
+        XCTAssertTrue(delegateMock.wantsToShowWasCalled)
+        XCTAssertEqual(delegateMock.item, expectedItem)
+    }
+
     func setupSUT() {
+        delegateMock = GalleryViewControllerDelegateMock()
         photosView = PhotosView(imageDownloader: ImageDownloaderMock())
         presenterMock = GalleryPresenterMock()
         searchController = UISearchController(searchResultsController: nil)
@@ -54,5 +76,6 @@ class GalleryViewControllerTests: XCTestCase {
                                     searchController: searchController,
                                     contentView: photosView)
         presenterMock.viewController = sut
+        sut.delegate = delegateMock
     }
 }

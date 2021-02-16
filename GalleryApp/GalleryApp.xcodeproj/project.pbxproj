@@ -69,6 +69,7 @@
 		9F8E411625DBE90C00E5A86C /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E411525DBE90C00E5A86C /* PhotoDetailViewController.swift */; };
 		9F8E411A25DBE9CE00E5A86C /* PhotoDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E411925DBE9CE00E5A86C /* PhotoDetailPresenterTests.swift */; };
 		9F8E412025DBED7300E5A86C /* PhotoDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E411F25DBED7300E5A86C /* PhotoDetailViewControllerTests.swift */; };
+		9F8E412425DBF57B00E5A86C /* GalleryViewControllerDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E412325DBF57B00E5A86C /* GalleryViewControllerDelegateMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,7 @@
 		9F8E411525DBE90C00E5A86C /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		9F8E411925DBE9CE00E5A86C /* PhotoDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailPresenterTests.swift; sourceTree = "<group>"; };
 		9F8E411F25DBED7300E5A86C /* PhotoDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		9F8E412325DBF57B00E5A86C /* GalleryViewControllerDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewControllerDelegateMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -585,6 +587,7 @@
 				9F23E3E625D9E26300F31550 /* GalleryRepositoryMock.swift */,
 				9F23E3EA25D9E37300F31550 /* GalleryViewControllerMock.swift */,
 				9F23E3F225D9ECD900F31550 /* GalleryPresenterMock.swift */,
+				9F8E412325DBF57B00E5A86C /* GalleryViewControllerDelegateMock.swift */,
 			);
 			path = GalleryView;
 			sourceTree = "<group>";
@@ -760,6 +763,7 @@
 				9F23E45A25DAE20100F31550 /* PhotosDataSourceTests.swift in Sources */,
 				9F8E410525DBE20E00E5A86C /* PhotoDetailViewTests.swift in Sources */,
 				9F23E43B25DACC1000F31550 /* ImageManagerMock.swift in Sources */,
+				9F8E412425DBF57B00E5A86C /* GalleryViewControllerDelegateMock.swift in Sources */,
 				9F23E3B625D99E7400F31550 /* SearchEndpointTests.swift in Sources */,
 				9F23E43F25DAD77400F31550 /* GetSizesResponseMock.swift in Sources */,
 				9F23E46225DAEB2D00F31550 /* PhotosViewTests.swift in Sources */,
