@@ -65,8 +65,9 @@
 		9F8E40FB25DBD90400E5A86C /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E40FA25DBD90400E5A86C /* PhotoDetailViewController.swift */; };
 		9F8E40FF25DBD9A300E5A86C /* PhotoDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E40FE25DBD9A300E5A86C /* PhotoDetailPresenter.swift */; };
 		9F8E410525DBE20E00E5A86C /* PhotoDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E410425DBE20E00E5A86C /* PhotoDetailViewTests.swift */; };
-		9F8E411025DBE89F00E5A86C /* PhotoDetailPresentMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E410F25DBE89F00E5A86C /* PhotoDetailPresentMock.swift */; };
+		9F8E411025DBE89F00E5A86C /* PhotoDetailPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E410F25DBE89F00E5A86C /* PhotoDetailPresenterMock.swift */; };
 		9F8E411625DBE90C00E5A86C /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E411525DBE90C00E5A86C /* PhotoDetailViewController.swift */; };
+		9F8E411A25DBE9CE00E5A86C /* PhotoDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E411925DBE9CE00E5A86C /* PhotoDetailPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,8 +141,9 @@
 		9F8E40FA25DBD90400E5A86C /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		9F8E40FE25DBD9A300E5A86C /* PhotoDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailPresenter.swift; sourceTree = "<group>"; };
 		9F8E410425DBE20E00E5A86C /* PhotoDetailViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewTests.swift; sourceTree = "<group>"; };
-		9F8E410F25DBE89F00E5A86C /* PhotoDetailPresentMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailPresentMock.swift; sourceTree = "<group>"; };
+		9F8E410F25DBE89F00E5A86C /* PhotoDetailPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailPresenterMock.swift; sourceTree = "<group>"; };
 		9F8E411525DBE90C00E5A86C /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		9F8E411925DBE9CE00E5A86C /* PhotoDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -550,6 +552,7 @@
 			isa = PBXGroup;
 			children = (
 				9F8E410325DBE20100E5A86C /* View */,
+				9F8E411925DBE9CE00E5A86C /* PhotoDetailPresenterTests.swift */,
 			);
 			path = PhotoDetail;
 			sourceTree = "<group>";
@@ -586,7 +589,7 @@
 		9F8E410E25DBE86000E5A86C /* PhotoDetail */ = {
 			isa = PBXGroup;
 			children = (
-				9F8E410F25DBE89F00E5A86C /* PhotoDetailPresentMock.swift */,
+				9F8E410F25DBE89F00E5A86C /* PhotoDetailPresenterMock.swift */,
 				9F8E411525DBE90C00E5A86C /* PhotoDetailViewController.swift */,
 			);
 			path = PhotoDetail;
@@ -743,7 +746,7 @@
 				9F23E3EF25D9E4CD00F31550 /* GalleryPresenterTests.swift in Sources */,
 				9F23E3F725D9ED9400F31550 /* GalleryViewControllerTests.swift in Sources */,
 				9F23E3F325D9ECD900F31550 /* GalleryPresenterMock.swift in Sources */,
-				9F8E411025DBE89F00E5A86C /* PhotoDetailPresentMock.swift in Sources */,
+				9F8E411025DBE89F00E5A86C /* PhotoDetailPresenterMock.swift in Sources */,
 				9F23E3FD25D9F12F00F31550 /* AppCoordinatorTests.swift in Sources */,
 				9F23E3EB25D9E37300F31550 /* GalleryViewControllerMock.swift in Sources */,
 				9F23E45625DAE05800F31550 /* ImageMock.swift in Sources */,
@@ -759,6 +762,7 @@
 				9F8E411625DBE90C00E5A86C /* PhotoDetailViewController.swift in Sources */,
 				9F23E37325D98A2900F31550 /* ImageManagerTests.swift in Sources */,
 				9F23E3E125D9DF1600F31550 /* SearchResponseMock.swift in Sources */,
+				9F8E411A25DBE9CE00E5A86C /* PhotoDetailPresenterTests.swift in Sources */,
 				9F23E45025DADFD300F31550 /* PhotoCellTests.swift in Sources */,
 				9F23E37825D98A6600F31550 /* MockNetworking.swift in Sources */,
 				9F23E3AF25D99CE900F31550 /* GetSizesEndpointTests.swift in Sources */,
