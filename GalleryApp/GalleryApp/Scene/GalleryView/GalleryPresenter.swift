@@ -27,9 +27,8 @@ class GalleryPresenter: GalleryPresenterProtocol {
     func wantsToSearch(text: String) {
         handlerTag(text)
         currentPage = 0
-        makeRequest()
         model.photos = []
-
+        makeRequest()
     }
 
     func loadMore() {
