@@ -27,9 +27,8 @@ class GalleryPresenter: GalleryPresenterProtocol {
     func wantsToSearch(text: String) {
         handlerTag(text)
         currentPage = 0
-        makeRequest()
         model.photos = []
-
+        makeRequest()
     }
 
     func loadMore() {
@@ -37,6 +36,10 @@ class GalleryPresenter: GalleryPresenterProtocol {
             return
         }
         makeRequest()
+    }
+
+    func didSelectItem(row: Int) {
+        viewController?.wantsToShow(model.photos[row])
     }
 
     private func makeRequest() {

@@ -12,6 +12,7 @@ class GalleryViewController: UIViewController {
     private let presenter: GalleryPresenterProtocol
     private let searchController: UISearchController
     private let contentView: PhotosView
+    weak var delegate: GalleryViewControllerDelegate?
 
     init(presenter: GalleryPresenterProtocol,
          searchController: UISearchController = UISearchController(searchResultsController: nil),
@@ -50,8 +51,8 @@ class GalleryViewController: UIViewController {
     }
 
     private func bindActions() {
-        contentView.didTapItem = { item in
-            // TODO: Call next controller
+        contentView.didTapItem = { [weak self] index in
+            self?.presenter.didSelectItem(row: index)
         }
 
         contentView.loadMore = { [weak self] in
@@ -79,6 +80,9 @@ extension GalleryViewController: GalleryViewControllerProtocol {
         present(alert, animated: true)
     }
 
+    func wantsToShow(_ item: Photo) {
+        delegate?.wantsToShow(item)
+    }
 }
 
 extension GalleryViewController: UISearchBarDelegate, UISearchControllerDelegate {

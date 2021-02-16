@@ -14,6 +14,8 @@ final class GalleryPresenterMock: GalleryPresenterProtocol {
     var wantsToSearchWasCalled = false
     var tag: String?
     var loadMoreWasCalled = false
+    var didSelectItemWasCalled = false
+    var row: Int?
 
     func wantsToSearch(text: String) {
         wantsToSearchWasCalled = true
@@ -24,5 +26,8 @@ final class GalleryPresenterMock: GalleryPresenterProtocol {
         loadMoreWasCalled = true
     }
 
-
+    func didSelectItem(row: Int) {
+        didSelectItemWasCalled = true
+        self.row = row
+    }
 }

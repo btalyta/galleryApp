@@ -59,9 +59,10 @@ class GalleryPresenterTests: XCTestCase {
     func test_loadMore_whenTagIsNotEmpty_andRequestIsSuccessful_callsViewControllerShowViewModel() {
         setupSUT()
         repositoryMock.result = SearchResponseMock.value.photos
-        let expectedViewModel = PhotosViewModel(photos: SearchResponseMock.value.photos.photo,
+        var expectedViewModel = PhotosViewModel(photos: SearchResponseMock.value.photos.photo,
                                                 hasMore: true,
                                                 isLoading: false)
+        expectedViewModel.photos.append(contentsOf: SearchResponseMock.value.photos.photo)
 
         sut.wantsToSearch(text: "kitten")
         sut.loadMore()
@@ -98,6 +99,18 @@ class GalleryPresenterTests: XCTestCase {
         XCTAssertEqual(repositoryMock.resquestPhotosCount, 1)
         XCTAssertEqual(repositoryMock.page, 1)
         XCTAssertEqual(repositoryMock.tags, "kitten")
+    }
+
+    func test_didSelectItem_callsViewControllerWantsToShow() {
+        setupSUT()
+        let expectedItem = Photo(id: "50943112551", title: "February 6, 2017")
+        repositoryMock.result = SearchResponseMock.value.photos
+        sut.wantsToSearch(text: "kitten")
+        
+        sut.didSelectItem(row: 0)
+
+        XCTAssertTrue(viewControllerMock.wantsToShowWasCalled)
+        XCTAssertEqual(viewControllerMock.item, expectedItem)
     }
 
     func setupSUT() {
