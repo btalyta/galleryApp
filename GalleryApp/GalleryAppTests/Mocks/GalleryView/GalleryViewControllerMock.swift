@@ -14,6 +14,8 @@ final class GalleryViewControllerMock: GalleryViewControllerProtocol {
     var message: String?
     var showWasCalled = false
     var viewModel: PhotosViewModel?
+    var wantsToShowWasCalled = false
+    var item: Photo?
 
     func showError(message: String) {
         showErrorWasCalled = true
@@ -23,5 +25,10 @@ final class GalleryViewControllerMock: GalleryViewControllerProtocol {
     func show(viewModel: PhotosViewModel) {
         showWasCalled = true
         self.viewModel = viewModel
+    }
+
+    func wantsToShow(_ item: Photo) {
+        wantsToShowWasCalled = true
+        self.item = item
     }
 }
