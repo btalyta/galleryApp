@@ -7,7 +7,7 @@
 
 @testable import GalleryApp
 
-final class PhotoDetailPresentMock: PhotoDetailPresenterProtocol {
+final class PhotoDetailPresenterMock: PhotoDetailPresenterProtocol {
     var viewController: PhotoDetailViewControllerProtocol?
     var viewDidiLoadWasCalled = false
 
