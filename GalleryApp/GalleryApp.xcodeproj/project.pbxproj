@@ -64,6 +64,7 @@
 		9F8E40F725DBD87800E5A86C /* PhotoDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E40F625DBD87800E5A86C /* PhotoDetailProtocols.swift */; };
 		9F8E40FB25DBD90400E5A86C /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E40FA25DBD90400E5A86C /* PhotoDetailViewController.swift */; };
 		9F8E40FF25DBD9A300E5A86C /* PhotoDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E40FE25DBD9A300E5A86C /* PhotoDetailPresenter.swift */; };
+		9F8E410525DBE20E00E5A86C /* PhotoDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E410425DBE20E00E5A86C /* PhotoDetailViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		9F8E40F625DBD87800E5A86C /* PhotoDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailProtocols.swift; sourceTree = "<group>"; };
 		9F8E40FA25DBD90400E5A86C /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		9F8E40FE25DBD9A300E5A86C /* PhotoDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailPresenter.swift; sourceTree = "<group>"; };
+		9F8E410425DBE20E00E5A86C /* PhotoDetailViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,7 +191,6 @@
 		9F23E31F25D97C2D00F31550 /* GalleryAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				9F23E43225DACBA000F31550 /* Common */,
 				9F23E3FA25D9F10A00F31550 /* Resource */,
 				9F23E37625D98A5900F31550 /* Mocks */,
 				9F23E3D825D9DE4100F31550 /* Scene */,
@@ -403,6 +404,8 @@
 		9F23E3D825D9DE4100F31550 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				9F8E410225DBE1FC00E5A86C /* PhotoDetail */,
+				9F23E43225DACBA000F31550 /* Common */,
 				9F23E3D925D9DE5000F31550 /* GalleryView */,
 			);
 			path = Scene;
@@ -539,6 +542,22 @@
 			children = (
 				9F8E40EC25DBD40A00E5A86C /* PhotoDetailView.swift */,
 				9F8E40F225DBD7F000E5A86C /* PhotoDetailViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F8E410225DBE1FC00E5A86C /* PhotoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9F8E410325DBE20100E5A86C /* View */,
+			);
+			path = PhotoDetail;
+			sourceTree = "<group>";
+		};
+		9F8E410325DBE20100E5A86C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F8E410425DBE20E00E5A86C /* PhotoDetailViewTests.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -701,6 +720,7 @@
 				9F23E3DB25D9DE6000F31550 /* GalleryRepositoryTests.swift in Sources */,
 				9F23E43525DACBC900F31550 /* ImageDownloaderTests.swift in Sources */,
 				9F23E45A25DAE20100F31550 /* PhotosDataSourceTests.swift in Sources */,
+				9F8E410525DBE20E00E5A86C /* PhotoDetailViewTests.swift in Sources */,
 				9F23E43B25DACC1000F31550 /* ImageManagerMock.swift in Sources */,
 				9F23E3B625D99E7400F31550 /* SearchEndpointTests.swift in Sources */,
 				9F23E43F25DAD77400F31550 /* GetSizesResponseMock.swift in Sources */,
