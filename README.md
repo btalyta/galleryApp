@@ -18,11 +18,12 @@ The data manipulation, user actions and requests are responsibilities the Presen
 #### Repository
 The repository is responsible for connecting the presenter to the network layer, sending the necessary data for resquest and making small treatments of the response received before returning it to the presenter 
 
-### Tests
+### Libraries
+- [NetworkingModule](https://github.com/btalyta/networkingModule): library for making API requests. 
 
+### Tests
 For the test, the XCTest and the following libraries were used 
 - [SnapshotTesting](https://github.com/pointfreeco/swift-snapshot-testing): for the preview unit tests 
-- [NetworkingModule](https://github.com/btalyta/networkingModule): library for making API requests. 
 
 ### Installation:
 
