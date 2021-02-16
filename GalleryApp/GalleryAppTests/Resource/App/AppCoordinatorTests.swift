@@ -23,6 +23,15 @@ class AppCoordinatorTests: XCTestCase {
         XCTAssertEqual(controller?.isKind(of: GalleryViewController.self), true)
     }
 
+    func test_searchBarSearchButtonClicked_showPhotoDetailView() {
+        setupSUT()
+
+        sut.wantsToShow(SearchResponseMock.makePhoto())
+        let controller = sut.navigationController.viewControllers.first
+
+        XCTAssertEqual(controller?.isKind(of: PhotoDetailViewController.self), true)
+    }
+
     func setupSUT() {
         window = UIWindow()
         sut = AppCoordinator(window: window, navigationController: UINavigationController())

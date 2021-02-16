@@ -25,6 +25,15 @@ class AppCoordinator {
         let presenter = GalleryPresenter(repository: GalleryRepository())
         let controller = GalleryViewController(presenter: presenter)
         presenter.viewController = controller
+        controller.delegate = self
+        navigationController.pushViewController(controller, animated: true)
+    }
+
+    func showPhotoDetailView(photo: Photo) {
+        let presenter = PhotoDetailPresenter(item: photo)
+        let controller = PhotoDetailViewController(presenter: presenter)
+        presenter.viewController = controller
+
         navigationController.pushViewController(controller, animated: true)
     }
 
@@ -34,5 +43,11 @@ class AppCoordinator {
         navigationController.navigationBar.standardAppearance = appearance
         navigationController.navigationBar.scrollEdgeAppearance = appearance
         navigationController.navigationBar.prefersLargeTitles = true
+    }
+}
+
+extension AppCoordinator: GalleryViewControllerDelegate {
+    func wantsToShow(_ item: Photo) {
+        showPhotoDetailView(photo: item)
     }
 }
