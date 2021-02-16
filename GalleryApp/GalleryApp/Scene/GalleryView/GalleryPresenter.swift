@@ -39,6 +39,10 @@ class GalleryPresenter: GalleryPresenterProtocol {
         makeRequest()
     }
 
+    func didSelectItem(row: Int) {
+        viewController?.wantsToShow(model.photos[row])
+    }
+
     private func makeRequest() {
         if isLast {
             return
